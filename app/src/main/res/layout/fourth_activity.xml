@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- שכבת תמיכה לתמונת הרקע -->
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- תמונת הרקע -->
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:layout_gravity="center"
+            android:src="@drawable/background3" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- השכבה שמכילה הכל -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- שכבת סלטים -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                >
+
+                <!-- טקסט סלטים -->
+                <TextView
+                    android:id="@+id/drinks_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/drinks"
+                    android:textSize="30sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slctDrink_Et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/slct_drink"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- שכבת רדיו משקאות -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/drink1_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- רדיו קולה -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/coke_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו ספרייט -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sprite_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <!-- רדיו בירה שחורה -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/beer_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו לימונדה -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lemon_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו תפוזים -->
+                            <RadioButton
+                                android:id="@+id/orange_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/orange_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <!-- רדיו סודה -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/soda_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו מים -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/water_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו ענבים -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/grapes_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו נסטי -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nestea_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <!-- רדיו מים -->
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zero_drnk"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="7dp"
+                            android:src="@drawable/drink" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/continue4Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/continue_Btn"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="7dp"
+                        android:background="@drawable/shape"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

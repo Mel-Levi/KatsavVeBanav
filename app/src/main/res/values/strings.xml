@@ -1,0 +1,89 @@
+<resources>
+
+    <string name="app_name">KatsavVeBanav</string>
+    <string name="slct_dish_mnu">Select a dish</string>
+    <string name="slct_shawarma">Shawarma</string>
+    <string name="slct_kabab">Kabab</string>
+    <string name="slct_levavot">Levavot</string>
+    <string name="slct_pargit">Pargit steak - only on a plate</string>
+    <string name="slct_antrikot">Antrikot steak - only on a plate</string>
+    <string name="slct_keves">Keves steak - only on a plate</string>
+    <string name="details_shawarma">Shawarma:  47 ILS</string>
+    <string name="hagasha_laffa">Laffa</string>
+    <string name="haghasha_pitta">Pitta</string>
+    <string name="hagasha_tsalahat">Plate</string>
+    <string name="details_kabab">Kabab:  45 ILS</string>
+    <string name="details_Levavot">Levavot:  42 ILS</string>
+    <string name="details_Pargit">Pargit steak + addition: 55 ILS</string>
+    <string name="details_Keves">Keves steak + addition: 65 ILS</string>
+    <string name="details_Antrikot">Antrikot steak + addition: 80 ILS</string>
+    <string name="welcome">Welcome</string>
+    <string name="hot_add">Hot addition: 5 ILS</string>
+    <string name="white_rice">White rice</string>
+    <string name="green_bean">Green bean</string>
+    <string name="plus_5_ILS">Plus 5 ILS</string>
+    <string name="cancele_tsalahat">An additional of 5 ILS was canceled</string>
+    <string name="continue_Btn">Continued</string>
+    <string name="slct_salads">Salads and More</string>
+    <string name="hummus">Hummus</string>
+    <string name="okSalad">OK</string>
+    <string name="slct_salad"><![CDATA[
+    First 6 items - for free
+      the rest - plus 2 ILS
+    ]]></string>
+    <string name="drinks">Drinks</string>
+    <string name="coke_drnk">Coke</string>
+    <string name="sprite_drnk">Sprite</string>
+    <string name="beer_drnk">Dark Beer</string>
+    <string name="lemon_drnk">Lemon</string>
+    <string name="orange_drnk">Orange</string>
+    <string name="water_drnk">"Water "</string>
+    <string name="fries">Fries</string>
+    <string name="vegetable">Vegetable Salad</string>
+    <string name="tehina">Tehina</string>
+    <string name="zero_drnk">Zero</string>
+    <string name="redCabbage">Red Cabbage</string>
+    <string name="greenCabage">Green Cabage</string>
+    <string name="onion">Onion</string>
+    <string name="amba">Amba</string>
+    <string name="tomato">Tomato</string>
+    <string name="pickles">Pickles</string>
+    <string name="flafel">Falafel balls</string>
+    <string name="soda_drnk">Soda</string>
+    <string name="grapes_drnk">Grapes</string>
+    <string name="nestea_drnk">Nestea</string>
+    <string name="startBtn">Start</string>
+    <string name="informationBtn">Info</string>
+    <string name="enterName_hint">Enter your name</string>
+    <string name="noNameEntered">No name entered</string>
+    <string name="nonSpaces">The name must be non-spaces</string>
+    <string name="helloName">Hello</string>
+    <string name="price_Title">Total Payment</string>
+    <string name="ilsView">ILS</string>
+    <string name="submitOrder">Submit Order</string>
+    <string name="orderSent">Your order sent to the podium</string>
+    <string name="rateUs">Rate the App</string>
+    <string name="yourRate">Your App rating is:</string>
+    <string name="helpUs">Help us get better:</string>
+    <string name="addNote">Add new note</string>
+    <string name="noteHere">Enter note here</string>
+    <string name="finish">Finish</string>
+    <string name="bonapatite"><![CDATA[
+    In a few moments we\'ll call you in microphone.
+
+Bonapatit!
+    ]]></string>
+    <string name="EnjoyableUse">Enjoyable Use</string>
+    <string name="infoDialog"><![CDATA[
+KatsavVeBanav put an end to standing in front of the podium!
+Fill in the desired dish in the application,
+And we'll make sure to call you on the microphone as soon as it's ready.
+
+In short: come, pay and eat! Bonapatite!
+    ]]></string>
+    <string name="plsSelectHotAdd">Please select hot addition or cancel the option</string>
+    <string name="slct_drink">No extra charge</string>
+    <string name="plus2ILS">Plus  2 ILS</string>
+    <string name="minus2ILS">An additional of 2 ILS was canceled</string>
+
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <!-- שכבת תמיכה לתמונת הרקע -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- תמונת הרקע -->
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:layout_gravity="center"
+            android:src="@drawable/background3"
+            />
+
+    </LinearLayout>     <!-- שכבת תמיכה לתמונת הרקע -->
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- השכבה שמכילה הכל -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <!-- טקסט ברוך הבא -->
+            <TextView
+                android:id="@+id/hello_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/helloName"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- לחצן תפריט -->
+            <Button
+                android:id="@+id/slct_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/slct_dish_mnu"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/shape"
+                android:onClick="selectDish"
+                />
+
+            <!-- טקסט פרטי המנות: מעודכן בג'אווה -->
+            <TextView
+                android:id="@+id/details_Et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <!-- שכבה שמכילה תמונות של המנות: מעודכן בג'אווה -->
+            <LinearLayout
+                android:id="@+id/pic_layout"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- שכבה גדולה של אופן ההגשה ותוספות: מעודכן בג'אווה -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <!-- שכבה שמכילה 2 שכבות רדיו -->
+                <RelativeLayout
+                    android:id="@+id/hagasha_Rlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <!-- קבוצת רדיו ראשונה: אופן ההגשה -->
+
+                    <RadioGroup
+                        android:id="@+id/hagasha_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        >
+
+                        <!-- רדיו לאפה -->
+                        <RadioButton
+                            android:id="@+id/laffa_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/hagasha_laffa"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="10dp"
+                            />
+                        <!-- רדיו צלחת -->
+                        <RadioButton
+                            android:id="@+id/tsalahat_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="@string/hagasha_tsalahat"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="10dp"
+
+                            />
+
+                        <!-- רדיו פיתה -->
+                        <RadioButton
+                            android:id="@+id/pitta_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="@string/haghasha_pitta"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="10dp"
+                            />
+
+                    </RadioGroup>
+
+                    <!-- קבוצת רדיו שנייה: תוספת חמה לסטייק -->
+                    <RadioGroup
+                        android:id="@+id/hotAddition_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="top|center"
+                        android:visibility="invisible"
+                        >
+
+                        <!-- רדיו אורז -->
+                        <RadioButton
+                            android:id="@+id/rice_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/white_rice"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="10dp"
+
+                            />
+
+                        <!-- רדיו שעועית -->
+                        <RadioButton
+                            android:id="@+id/bean_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/green_bean"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="10dp"
+
+                            />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <!-- שכבה שמכילה צק בוקס אחד ו-2 רדיו -->
+                <LinearLayout
+                    android:id="@+id/hotAddition_Layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/hot_addition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/hot_add"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        >
+                    </CheckBox>
+
+
+                    <!-- קבוצת רדיו בתוספת 5 שקלים -->
+                    <RadioGroup
+                        android:id="@+id/hotAddition2_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:layout_marginTop="7dp"
+                        android:visibility="invisible"
+                        >
+
+                        <!-- רדיו אורז -->
+                        <RadioButton
+                            android:id="@+id/rice2_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/white_rice"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <!-- רדיו שעועית -->
+                        <RadioButton
+                            android:id="@+id/bean2_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/green_bean"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/continueBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/continue_Btn"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="7dp"
+                    android:background="@drawable/shape"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>  <!-- השכבה שמכילה הכל -->
+
+    </ScrollView>
+
+</RelativeLayout>

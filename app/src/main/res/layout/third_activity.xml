@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- שכבת תמיכה לתמונת הרקע -->
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- תמונת הרקע -->
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:layout_gravity="center"
+            android:src="@drawable/background3" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- השכבה שמכילה הכל -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- שכבת סלטים -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                >
+
+                <!-- טקסט סלטים -->
+                <TextView
+                    android:id="@+id/addition_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/slct_salads"
+                    android:textSize="30sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slctSld_Et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/slct_salad"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!-- שכבת רדיו משקאות -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+
+                            <CheckBox
+                                android:id="@+id/fries"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fries"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/hummus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hummus"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/redCabbage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/redCabbage"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/tehina"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tehina"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <CheckBox
+                                android:id="@+id/vegetable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vegetable"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/onion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/onion"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/amba"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/amba"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/tomato"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tomato"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/greenCabage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/greenCabage"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <CheckBox
+                                android:id="@+id/flafel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/flafel"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="84dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:src="@drawable/additions" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="5dp"
+                                android:src="@drawable/additions2" />
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/continue3Btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/continue_Btn"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:padding="7dp"
+                            android:background="@drawable/shape"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

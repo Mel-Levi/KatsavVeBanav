@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">קצב ובניו</string>
+    <string name="slct_dish_mnu">בחירת מנה</string>
+    <string name="slct_shawarma">שווארמה</string>
+    <string name="slct_kabab">קבב</string>
+    <string name="slct_levavot">לבבות</string>
+    <string name="slct_pargit">סטייק פרגית - בצלחת בלבד</string>
+    <string name="slct_antrikot">סטייק אנטריקוט - בצלחת בלבד</string>
+    <string name="slct_keves">סטייק כבש - בצלחת בלבד</string>
+    <string name="details_shawarma">שווארמה:  47 ש\"ח</string>
+    <string name="hagasha_laffa">לאפה</string>
+    <string name="haghasha_pitta">פיתה</string>
+    <string name="hagasha_tsalahat">צלחת</string>
+    <string name="details_kabab">קבב:  45 ש\"ח</string>
+    <string name="details_Levavot">לבבות:  42 ש\"ח</string>
+    <string name="details_Pargit">סטייק פרגית + תוספת:  55 ש\"ח</string>
+    <string name="details_Keves">סטייק כבש + תוספת:  65 ש\"ח</string>
+    <string name="details_Antrikot">סטייק אנטריקוט + תוספת:  80 ש\"ח</string>
+    <string name="welcome">ברוכים הבאים</string>
+    <string name="hot_add">תוספת חמה: 5 שקלים</string>
+    <string name="white_rice">אורז לבן</string>
+    <string name="green_bean">שעועית ירוקה</string>
+    <string name="plus_5_ILS">בתוספת 5 שקלים</string>
+    <string name="cancele_tsalahat">בוטלה תוספת של 5 שקלים</string>
+    <string name="continue_Btn">המשך</string>
+    <string name="slct_salads">סלטים ועוד</string>
+    <string name="hummus">חומוס</string>
+    <string name="okSalad">אישור</string>
+    <string name="slct_salad"><![CDATA[
+  6 פריטים ראשונים עלינו
+    השאר - בתוספת 2 שקלים
+    ]]></string>
+    <string name="drinks">משקאות</string>
+    <string name="coke_drnk">קולה</string>
+    <string name="sprite_drnk">ספרייט</string>
+    <string name="beer_drnk">בירה שחורה</string>
+    <string name="lemon_drnk">לימונדה</string>
+    <string name="orange_drnk">תפוזים</string>
+    <string name="water_drnk">"מים  "</string>
+    <string name="fries">צ\'יפס</string>
+    <string name="vegetable">סלט ירקות</string>
+    <string name="tehina">טחינה</string>
+    <string name="zero_drnk">זירו</string>
+    <string name="redCabbage">כרוב אדום</string>
+    <string name="greenCabage">כרוב לבן</string>
+    <string name="onion">בצל</string>
+    <string name="amba">עמבה</string>
+    <string name="tomato">עגבניה</string>
+    <string name="pickles">חמוצים</string>
+    <string name="flafel">כדורי פלאפל</string>
+    <string name="soda_drnk">סודה</string>
+    <string name="grapes_drnk">ענבים</string>
+    <string name="nestea_drnk">נסטי</string>
+    <string name="startBtn">התחל</string>
+    <string name="informationBtn">מידע</string>
+    <string name="enterName_hint">הכנס את שמך</string>
+    <string name="noNameEntered">לא הוזן שם</string>
+    <string name="nonSpaces">על השם להיות ללא רווחים</string>
+    <string name="helloName">שלום</string>
+    <string name="price_Title">סה\"כ לתשלום</string>
+    <string name="ilsView">ש\"ח</string>
+    <string name="submitOrder">בצע הזמנה</string>
+    <string name="orderSent">הזמנתך נשלחה לדוכן</string>
+    <string name="rateUs">דרגו את האפליקציה</string>
+    <string name="yourRate">דירוגך לאפליקציה:</string>
+    <string name="helpUs">עזור לנו להשתפר:</string>
+    <string name="addNote">הוספת הערה חדשה</string>
+    <string name="noteHere">הכניסו הערה כאן</string>
+    <string name="finish">סיום</string>
+    <string name="bonapatite"><![CDATA[
+    בעוד כמה רגעים נקרא לך במיקרופון.
+
+בתיאבון!
+    ]]></string>
+    <string name="EnjoyableUse">שימוש מהנה</string>
+    <string name="infoDialog"><![CDATA[
+קצב ובניו שמים סוף לעמידה מול הדוכן!
+מלאו את המנה הרצויה באפליקציה,
+ואנו נדאג לקרוא לכם במיקרופון ברגע שתהיה מוכנה.
+
+בקיצור: מגיעים, משלמים ואוכלים! בתיאבון!
+    ]]></string>
+    <string name="plsSelectHotAdd">בחר בבקשה תוספת חמה או בטל את האפשרות לכך</string>
+    <string name="slct_drink">ללא תוספת תשלום</string>
+    <string name="plus2ILS">תוספת של 2 שקלים</string>
+    <string name="minus2ILS">בוטלה תוספת של 2 שקלים</string>
+
+</resources>

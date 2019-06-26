@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/shawarma" android:title="@string/slct_shawarma" />
+    <item android:id="@+id/kabab" android:title="@string/slct_kabab" />
+    <item android:id="@+id/levavot" android:title="@string/slct_levavot" />
+    <item android:id="@+id/pargit" android:title="@string/slct_pargit" />
+    <item android:id="@+id/antrikot" android:title="@string/slct_antrikot" />
+    <item android:id="@+id/keves" android:title="@string/slct_keves" />
+
+</menu>

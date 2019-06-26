@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <!-- שכבת תמיכה לתמונת הרקע -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- תמונת הרקע -->
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:layout_gravity="center"
+            android:src="@drawable/background3" />
+
+    </LinearLayout>     <!-- שכבת תמיכה לתמונת הרקע -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- השכבה שמכילה הכל -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <!-- טקסט מחיר לתשלום -->
+            <TextView
+                android:id="@+id/totalPrice_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/price_Title"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- מציג מחיר סופי -->
+            <TextView
+                android:id="@+id/totalPrice_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent2"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- לחצן ביצוע הזמנה -->
+            <Button
+                android:id="@+id/submitOrder_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:text="@string/submitOrder"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!-- שכבת דירוג -->
+            <LinearLayout
+                android:id="@+id/rating_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <!-- כותרת דירוג -->
+                <TextView
+                    android:id="@+id/rating_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/rateUs"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- כוכבים -->
+                <RatingBar
+                    android:id="@+id/rating_Bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:stepSize="1" />
+
+                <!-- דירוגך הוא -->
+
+                <TextView
+                    android:id="@+id/yourRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- שכבת הערות -->
+            <LinearLayout
+                android:id="@+id/notes_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            </LinearLayout>
+
+            <!-- שכבת כפתורי סיום -->
+            <LinearLayout
+                android:id="@+id/notebtn_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/noteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/addNote"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/finishBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/finish"
+                    android:padding="7dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>  <!-- השכבה שמכילה הכל -->
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
